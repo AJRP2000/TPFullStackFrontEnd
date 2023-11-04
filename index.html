@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Proyecto Fullstack</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/index.js'></script>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>App Mi juego de Personajes</h1>
+    </header>
+    <div class="content">
+        <h2>Login</h2>
+        <div class="login-form" id="logIn">
+            <form onSubmit={handleFormSubmit}>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <br>
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+    <div class="content">
+        <h2>Los personajes del día</h2>
+        <div class="personajes">
+            <div class="personaje" id="personaje1"></div>
+            <div class="personaje" id="personaje2"></div>
+            <div class="personaje" id="personaje3"></div>
+            <div class="personaje" id="personaje4"></div>
+            <div class="personaje" id="personaje5"></div>
+        </div>
+    </div>
+    <footer>
+        <div class="contact">
+            <p>Dirección: Mario Bravo 1050</p>
+            <p>Telefono: <b>+54 9 11 1234 5678</b></p>
+            <p>Mail: <b>example.email@gmail.com</b></p>
+        </div>      
+    </footer>
+</div>
+</body>
+</html>
