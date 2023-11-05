@@ -6,7 +6,6 @@
     <title>Proyecto Fullstack</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <script src='js/index.js'></script>
 </head>
 <body>
 <div class="container">
@@ -16,18 +15,18 @@
     <div class="content">
         <h2>Login</h2>
         <div class="login-form" id="logIn">
-            <form onSubmit={handleFormSubmit}>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <form onSubmit="logInSubmit(event)">
+                <label for="username">Nombre:</label>
+                <input type="text" id="username" name="username" placeholder="Ingrese su nombre" required>
                 <br>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                <label for="password">Pin Numerico:</label>
+                <input type="password" id="password" name="password" placeholder="Ingrese su Pin Numerico" required>
                 <br>
                 <input type="submit" value="Login">
             </form>
         </div>
     </div>
-    <div class="content">
+    <div class="content" >
         <h2>Los personajes del día</h2>
         <div class="personajes">
             <div class="personaje" id="personaje1"></div>
@@ -46,4 +45,5 @@
     </footer>
 </div>
 </body>
+    <script src='js/index.js'></script>
 </html>
