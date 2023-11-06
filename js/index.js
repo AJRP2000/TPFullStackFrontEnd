@@ -29,6 +29,7 @@ function logInSubmit(event){
         })
         .catch(error => {
             console.error('Error:', error);
+            alert("Error: " + error.toString());
         });
 }
 
@@ -76,6 +77,7 @@ function extraerPersonajes(){
         })
         .catch(error => {
             console.error('Error:', error);
+            alert("Error: " + error.toString());
         });
 }
 

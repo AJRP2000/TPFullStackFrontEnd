@@ -13,18 +13,66 @@
         <div id="welcomeMessage"></div>
     </header>
     <div class="content" id="CrearPersonaje">
-
+        <h2>Vistiendo al personaje: <b id="nombrePersonaje"></b></h2>
+        <div class ="imagenes-creacion">
+            <div class="cuadro" id="cuadroPersonaje">
+                <button id="botonIzquierdaPersonaje" onclick="cargarIzquierdaPersonaje()"><-</button>
+                <img class="imagen-seleccion" id="imagenPersonaje">
+                <button id="botonDerechaPersonaje"   onclick="cargarDerechaPersonaje()">-></button>
+            </div>
+            <div class="cuadro" id="cuadroRopaSuperior">
+                <button id="botonIzquierdaRopaSuperior" onclick="cargarIzquierdaRopaSuperior()"><-</button>
+                <img class="imagen-seleccion" id="imagenRopaSuperior">
+                <button id="botonDerechaRopaSuperior"   onclick="cargarDerechaRopaSuperior()">-></button>
+            </div>
+            <div class="cuadro" id="cuadroRopaInferior">
+                <button id="botonIzquierdaRopaInferior" onclick="cargarIzquierdaRopaInferior()"><-</button>
+                <img class="imagen-seleccion" id="imagenRopaInferior">
+                <button id="botonDerechaRopaInferior"   onclick="cargarDerechaRopaInferior()">-></button>
+            </div>
+            <div class="cuadro" id="cuadroZapatos">
+                <button id="botonIzquierdaZapatos" onclick="cargarIzquierdaZapatos()"><-</button>
+                <img class="imagen-seleccion" id="imagenZapatos">
+                <button id="botonDerechaZapatos"   onclick="cargarDerechaZapatos()">-></button>
+            </div>
+        </div>
+        <button id="botonGuardar" onclick="guardarPersonaje()">Guardar Personaje</button>
     </div>
     <div class="content" id="PersonajesCreados">
         <h2>Personajes Creados por el Usuario</h2>
         <button id="botonIzquierda" onclick="cargarIzquierda()"><-</button>
         <button id="botonDerecha"   onclick="cargarDerecha()">-></button>
         <div class="personajes">
-            <div class="personaje" id="personaje1"></div>
-            <div class="personaje" id="personaje2"></div>
-            <div class="personaje" id="personaje3"></div>
-            <div class="personaje" id="personaje4"></div>
-            <div class="personaje" id="personaje5"></div>
+            <div class="personaje" id="personaje1">
+                <img class="imagen" id="ImagenPersonaje1">
+                <img class="imagen" id="ImagenRopaSuperior1">
+                <img class="imagen" id="ImagenRopaInferior1">
+                <img class="imagen" id="ImagenZapatos1">
+            </div>
+            <div class="personaje" id="personaje2">
+                <img class="imagen" id="ImagenPersonaje2">
+                <img class="imagen" id="ImagenRopaSuperior2">
+                <img class="imagen" id="ImagenRopaInferior2">
+                <img class="imagen" id="ImagenZapatos2">
+            </div>
+            <div class="personaje" id="personaje3">
+                <img class="imagen" id="ImagenPersonaje3">
+                <img class="imagen" id="ImagenRopaSuperior3">
+                <img class="imagen" id="ImagenRopaInferior3">
+                <img class="imagen" id="ImagenZapatos3">
+            </div>
+            <div class="personaje" id="personaje4">
+                <img class="imagen" id="ImagenPersonaje4">
+                <img class="imagen" id="ImagenRopaSuperior4">
+                <img class="imagen" id="ImagenRopaInferior4">
+                <img class="imagen" id="ImagenZapatos4">
+            </div>
+            <div class="personaje" id="personaje5">
+                <img class="imagen" id="ImagenPersonaje5">
+                <img class="imagen" id="ImagenRopaSuperior5">
+                <img class="imagen" id="ImagenRopaInferior5">
+                <img class="imagen" id="ImagenZapatos5">
+            </div>
         </div>
     </div>
 </div>
